@@ -1,0 +1,118 @@
+# ============================================================
+# BAIKJUWON04 GitHub Blog
+# Jekyll + Chirpy
+# ============================================================
+
+theme: jekyll-theme-chirpy
+
+lang: ko-KR
+timezone: Asia/Seoul
+
+title: 백주원
+tagline: Embedded · Software · Computer Science
+description: >-
+  임베디드 소프트웨어, 개발 공부, 컴퓨터과학,
+  프로젝트와 외부활동을 기록하는 취업용 기술 블로그입니다.
+
+url: "https://baikjuwon04.github.io"
+baseurl: ""
+
+github:
+  username: BAIKJUWON04
+
+social:
+  name: 백주원
+  email:
+  links:
+    - https://github.com/BAIKJUWON04
+    - https://baikjuwon04.github.io
+
+# GitHub 프로필 이미지를 사이드바 프로필로 사용
+avatar: "https://avatars.githubusercontent.com/u/317894780?v=4"
+
+# 비워두면 사용자의 시스템 설정을 따라가며
+# 좌측 하단에서 라이트/다크 모드를 바꿀 수 있습니다.
+theme_mode:
+
+toc: true
+
+comments:
+  provider:
+
+pwa:
+  enabled: true
+  cache:
+    enabled: true
+
+paginate: 10
+
+kramdown:
+  footnote_backlink: "&#8617;&#xfe0e;"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: false
+      toc: true
+      permalink: /posts/:title/
+
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - purgecss.js
+  - "*.config.js"
+  - "package*.json"
+  - "_templates"
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/

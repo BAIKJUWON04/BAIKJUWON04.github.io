@@ -1,0 +1,23 @@
+# 카테고리는 이 파일을 기준으로 관리합니다.
+# 글의 Front Matter에서 category 값을 아래 name과 동일하게 적습니다.
+
+categories:
+  - name: 포트폴리오
+    slug: portfolio
+    description: 완성 프로젝트와 핵심 결과물
+
+  - name: 개발공부
+    slug: development
+    description: C, C++, Python, Java, 웹, Linux, Git 등
+
+  - name: 임베디드
+    slug: embedded
+    description: ESP32, ESP8266, STM32, 센서, 통신, 회로 등
+
+  - name: CS공부
+    slug: cs
+    description: 자료구조, 알고리즘, 운영체제, 네트워크, 데이터베이스 등
+
+  - name: 외부활동
+    slug: activities
+    description: 해커톤, 공모전, 동아리, 교육활동, 해외봉사 등
